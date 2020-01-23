@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spell Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-m8-fWz">
+                                <frame key="frameInset" minX="40" minY="381" width="240" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cgL-m8-fWz" secondAttribute="height" multiplier="40:9" id="NNB-mi-XH5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.29609507684517583" blue="0.61634471318493156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created by Etash Kalra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQS-3B-aB4">
+                                <frame key="frameInset" minX="20" minY="527" width="280" height="21"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686274509807" green="0.54509803921568623" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Spell_Me_Logo_Round.png" translatesAutoresizingMaskIntoConstraints="NO" id="NsO-sG-Vna">
+                                <frame key="frameInset" minX="40" minY="133" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NsO-sG-Vna" secondAttribute="height" multiplier="1:1" id="Z44-Z2-iZb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cgL-m8-fWz" secondAttribute="trailing" constant="20" id="9vR-cU-pdN"/>
+                            <constraint firstItem="NsO-sG-Vna" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GKs-DW-nuW"/>
+                            <constraint firstItem="cgL-m8-fWz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="Mlb-Ag-pTT"/>
+                            <constraint firstItem="NsO-sG-Vna" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-31" id="ZJy-Xx-H1p"/>
+                            <constraint firstItem="cgL-m8-fWz" firstAttribute="top" secondItem="NsO-sG-Vna" secondAttribute="bottom" constant="8" id="cd8-xr-kpt"/>
+                            <constraint firstItem="bQS-3B-aB4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="cel-px-U8A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NsO-sG-Vna" secondAttribute="trailing" constant="20" id="hBt-zp-qvs"/>
+                            <constraint firstItem="bQS-3B-aB4" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="iKj-6a-HI1"/>
+                            <constraint firstItem="NsO-sG-Vna" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="m0c-lp-8um"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="bQS-3B-aB4" secondAttribute="bottom" constant="20" id="w8B-Al-QOL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Spell_Me_Logo_Round.png" width="700" height="700"/>
+    </resources>
+</document>

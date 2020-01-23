@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="39p-A4-WXD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spell Me!-->
+        <scene sceneID="5dG-Cw-97N">
+            <objects>
+                <viewController id="nfK-0R-COw" customClass="StartViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gIm-SX-2Vs"/>
+                        <viewControllerLayoutGuide type="bottom" id="DnC-1b-Ndu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3kg-uv-Vko">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awb-Gc-oKr">
+                                <rect key="frame" x="92.5" y="115" width="190" height="264"/>
+                                <color key="backgroundColor" red="0.82524985976050913" green="0.89114022663391335" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="4xa-tJ-rsL"/>
+                                    <constraint firstAttribute="width" constant="190" id="OBz-L5-mJ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxk-ao-250">
+                                <rect key="frame" x="101.5" y="222.5" width="172" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="VWy-Ax-f7H"/>
+                                    <constraint firstAttribute="height" constant="49" id="vWI-KG-ejk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="21"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Add Words">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.60784313729999995" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addWordClick:" destination="nfK-0R-COw" eventType="touchUpInside" id="gjg-Oy-QS4"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRE-1k-ZdG">
+                                <rect key="frame" x="118.5" y="171.5" width="138" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="Npg-np-s18"/>
+                                    <constraint firstAttribute="height" constant="49" id="VB6-ts-kZL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="27"/>
+                                <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="My Lists">
+                                    <color key="titleColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DlQ-R1-gHf" kind="show" id="R3w-Gd-gIy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spell_Me_Logo_Round.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tpr-XR-enY">
+                                <rect key="frame" x="162.5" y="499" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="L8K-TP-TKv"/>
+                                    <constraint firstAttribute="height" constant="50" id="y0U-Jn-xMy"/>
+                                </constraints>
+                            </imageView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQW-Y6-2un">
+                                <rect key="frame" x="101.5" y="270.5" width="172" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="DSO-gp-eRl"/>
+                                    <constraint firstAttribute="width" constant="172" id="swc-NU-VSJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="21"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Results">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.60784313729999995" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultsClicked:" destination="nfK-0R-COw" eventType="touchUpInside" id="mkQ-qi-6GZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="awb-Gc-oKr" firstAttribute="centerY" secondItem="3kg-uv-Vko" secondAttribute="centerY" constant="-37.5" id="7fP-Xg-Vnd"/>
+                            <constraint firstItem="dxk-ao-250" firstAttribute="top" secondItem="IRE-1k-ZdG" secondAttribute="bottom" constant="2" id="G1G-m3-MAJ"/>
+                            <constraint firstItem="awb-Gc-oKr" firstAttribute="centerY" secondItem="3kg-uv-Vko" secondAttribute="centerY" constant="-37.5" id="OgB-l6-zhz"/>
+                            <constraint firstItem="OQW-Y6-2un" firstAttribute="centerX" secondItem="3kg-uv-Vko" secondAttribute="centerX" id="QAf-qQ-9GQ"/>
+                            <constraint firstItem="awb-Gc-oKr" firstAttribute="centerX" secondItem="3kg-uv-Vko" secondAttribute="centerX" id="T2W-Zg-D6z"/>
+                            <constraint firstItem="awb-Gc-oKr" firstAttribute="centerX" secondItem="3kg-uv-Vko" secondAttribute="centerX" id="WOb-Bg-4Iz"/>
+                            <constraint firstItem="dxk-ao-250" firstAttribute="centerY" secondItem="3kg-uv-Vko" secondAttribute="centerY" constant="-37.5" id="b5a-C6-hSn"/>
+                            <constraint firstItem="Tpr-XR-enY" firstAttribute="centerX" secondItem="3kg-uv-Vko" secondAttribute="centerX" id="baQ-9s-Vhi"/>
+                            <constraint firstItem="IRE-1k-ZdG" firstAttribute="centerX" secondItem="3kg-uv-Vko" secondAttribute="centerX" id="h6e-zm-y4J"/>
+                            <constraint firstItem="DnC-1b-Ndu" firstAttribute="top" secondItem="Tpr-XR-enY" secondAttribute="bottom" constant="20" id="jcg-Xo-bze"/>
+                            <constraint firstItem="OQW-Y6-2un" firstAttribute="top" secondItem="dxk-ao-250" secondAttribute="bottom" constant="-1" id="jsg-i8-GTd"/>
+                            <constraint firstItem="dxk-ao-250" firstAttribute="centerX" secondItem="3kg-uv-Vko" secondAttribute="centerX" id="lph-5K-KZ2"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Spell Me!" prompt="  " id="mvf-a7-yce">
+                        <barButtonItem key="backBarButtonItem" title="Back" style="plain" id="sk4-Rv-ics">
+                            <color key="tintColor" red="0.96470588239999999" green="0.60784313729999995" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sx7-rX-sey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="235"/>
+        </scene>
+        <!--Add Word View Controller-->
+        <scene sceneID="Nfu-SD-tqd">
+            <objects>
+                <viewController storyboardIdentifier="addWordMainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="na9-vo-xrW" customClass="AddWordViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8AO-Ph-7Ta"/>
+                        <viewControllerLayoutGuide type="bottom" id="gbV-B9-G7l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eUV-Gy-dJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pronounciation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybQ-Ad-AIl">
+                                <rect key="frame" x="30.5" y="190" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PTW-bE-zgc"/>
+                                    <constraint firstAttribute="width" constant="120" id="uiw-X0-QPe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition, Origin, etc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUa-fe-I5h">
+                                <rect key="frame" x="43.5" y="242" width="288" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="ebo-gS-4dq"/>
+                                    <constraint firstAttribute="width" constant="288" id="yEA-wf-qzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spell_Me_Logo_Round.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Qp-ZV-sRz">
+                                <rect key="frame" x="162.5" y="615" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Min-jd-jME"/>
+                                    <constraint firstAttribute="height" constant="50" id="cPc-XJ-4k0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmh-xy-V9h">
+                                <rect key="frame" x="43.5" y="423" width="288" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="54Z-ee-tSh"/>
+                                    <constraint firstAttribute="height" constant="23" id="CJx-Pe-i25"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sG0-Kt-cMi">
+                                <rect key="frame" x="47.5" y="454" width="280" height="153"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Odp-Yl-Jqn"/>
+                                    <constraint firstAttribute="height" constant="153" id="lS2-0g-Hbk"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="na9-vo-xrW" id="6cL-Sc-XZU"/>
+                                    <outlet property="delegate" destination="na9-vo-xrW" id="Tjc-du-ByV"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8da-xp-cPh">
+                                <rect key="frame" x="248.5" y="187" width="85" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="iUo-hI-Axm"/>
+                                    <constraint firstAttribute="width" constant="85" id="rgI-VR-Dwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="na9-vo-xrW" eventType="touchUpInside" id="ETa-gt-ilH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gef-aA-AQs">
+                                <rect key="frame" x="163.5" y="187" width="78" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="67L-8e-hXm"/>
+                                    <constraint firstAttribute="width" constant="78" id="hRX-bS-qKB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="15"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="na9-vo-xrW" eventType="touchUpInside" id="2GA-DK-4gS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex. Officinal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-ZG-y2k">
+                                <rect key="frame" x="63" y="83" width="307" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="xAm-Lj-CPz">
+                                <rect key="frame" x="45.5" y="273" width="284" height="142"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="Vke-o1-ZuB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27A-sk-UzU">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <color key="barTintColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
+                                    <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="New Word" id="Tdu-Bs-vvR">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="KYn-Kh-Rt6">
+                                            <color key="tintColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="xPressed:" destination="na9-vo-xrW" id="E4D-VX-v19"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Add" id="SKl-se-4i7">
+                                            <color key="tintColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="addWord:" destination="na9-vo-xrW" id="aut-MU-KtI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvG-Il-g7P">
+                                <rect key="frame" x="-2" y="76" width="57" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2bv-2g-82t"/>
+                                    <constraint firstAttribute="width" constant="57" id="4i0-rO-aor"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dictionaryCom" translatesAutoresizingMaskIntoConstraints="NO" id="JJT-Q5-1yS">
+                                <rect key="frame" x="93" y="129" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fwF-Wy-HDq"/>
+                                    <constraint firstAttribute="width" constant="50" id="y2g-gb-Mj1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mw" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-Z6-d25">
+                                <rect key="frame" x="232" y="129" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TJg-ec-fZd"/>
+                                    <constraint firstAttribute="width" constant="50" id="ThP-Lo-0a5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Qp-ZV-sRz" firstAttribute="top" secondItem="sG0-Kt-cMi" secondAttribute="bottom" constant="8" id="1EQ-HX-gmc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lkK-ZG-y2k" secondAttribute="trailing" constant="-11" id="4Ou-45-l5h"/>
+                            <constraint firstItem="8da-xp-cPh" firstAttribute="leading" secondItem="gef-aA-AQs" secondAttribute="trailing" constant="7" id="5L2-Md-rdW"/>
+                            <constraint firstItem="8da-xp-cPh" firstAttribute="centerY" secondItem="gef-aA-AQs" secondAttribute="centerY" id="6X2-Hg-dWk"/>
+                            <constraint firstItem="sG0-Kt-cMi" firstAttribute="top" secondItem="mmh-xy-V9h" secondAttribute="bottom" constant="8" id="8DF-ic-PIN"/>
+                            <constraint firstItem="ybQ-Ad-AIl" firstAttribute="top" secondItem="JJT-Q5-1yS" secondAttribute="bottom" constant="11" id="IQd-l8-Keg"/>
+                            <constraint firstItem="JJT-Q5-1yS" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" constant="-69.5" id="M2e-OA-Wwv"/>
+                            <constraint firstItem="CvG-Il-g7P" firstAttribute="leading" secondItem="eUV-Gy-dJ4" secondAttribute="leadingMargin" constant="-18" id="M2e-oc-cw5"/>
+                            <constraint firstItem="xAm-Lj-CPz" firstAttribute="top" secondItem="DUa-fe-I5h" secondAttribute="bottom" constant="8" id="OvP-fn-vJ1"/>
+                            <constraint firstItem="32Q-Z6-d25" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" constant="69.5" id="Tm4-rQ-Otz"/>
+                            <constraint firstItem="mmh-xy-V9h" firstAttribute="top" secondItem="xAm-Lj-CPz" secondAttribute="bottom" constant="8" id="WiT-bD-b71"/>
+                            <constraint firstItem="sG0-Kt-cMi" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" id="YOy-4r-fV7"/>
+                            <constraint firstItem="27A-sk-UzU" firstAttribute="leading" secondItem="eUV-Gy-dJ4" secondAttribute="leadingMargin" constant="-20" id="aWS-FX-GGn"/>
+                            <constraint firstItem="xAm-Lj-CPz" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" id="c0d-Cn-9Sj"/>
+                            <constraint firstItem="27A-sk-UzU" firstAttribute="top" secondItem="8AO-Ph-7Ta" secondAttribute="bottom" id="c2u-lq-u2I"/>
+                            <constraint firstItem="32Q-Z6-d25" firstAttribute="top" secondItem="lkK-ZG-y2k" secondAttribute="bottom" constant="16" id="dsW-St-LXW"/>
+                            <constraint firstItem="mmh-xy-V9h" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" id="e43-bi-2h7"/>
+                            <constraint firstItem="DUa-fe-I5h" firstAttribute="top" secondItem="gef-aA-AQs" secondAttribute="bottom" constant="6" id="eEb-Ta-Msi"/>
+                            <constraint firstItem="gef-aA-AQs" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" constant="15" id="ha2-Bq-BQM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="27A-sk-UzU" secondAttribute="trailing" constant="-20" id="hqb-bY-8pO"/>
+                            <constraint firstItem="gef-aA-AQs" firstAttribute="top" secondItem="JJT-Q5-1yS" secondAttribute="bottom" constant="8" id="iXE-oe-ogS"/>
+                            <constraint firstItem="4Qp-ZV-sRz" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" id="oU8-JT-Ij8"/>
+                            <constraint firstItem="CvG-Il-g7P" firstAttribute="centerY" secondItem="lkK-ZG-y2k" secondAttribute="centerY" id="qZY-IF-sLf"/>
+                            <constraint firstItem="gef-aA-AQs" firstAttribute="leading" secondItem="ybQ-Ad-AIl" secondAttribute="trailing" constant="13" id="rM2-19-683"/>
+                            <constraint firstItem="gbV-B9-G7l" firstAttribute="top" secondItem="4Qp-ZV-sRz" secondAttribute="bottom" constant="2" id="sEb-YF-haS"/>
+                            <constraint firstItem="sG0-Kt-cMi" firstAttribute="top" secondItem="mmh-xy-V9h" secondAttribute="bottom" constant="8" id="umf-B6-J9x"/>
+                            <constraint firstItem="lkK-ZG-y2k" firstAttribute="top" secondItem="8AO-Ph-7Ta" secondAttribute="bottom" constant="63" id="vVo-Vg-ucg"/>
+                            <constraint firstItem="DUa-fe-I5h" firstAttribute="centerX" secondItem="eUV-Gy-dJ4" secondAttribute="centerX" id="wkx-Pq-mxN"/>
+                            <constraint firstItem="JJT-Q5-1yS" firstAttribute="top" secondItem="lkK-ZG-y2k" secondAttribute="bottom" constant="16" id="xpl-Xc-xCL"/>
+                            <constraint firstItem="lkK-ZG-y2k" firstAttribute="leading" secondItem="CvG-Il-g7P" secondAttribute="trailing" constant="8" id="zR1-fl-tqC"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="dcImage" destination="JJT-Q5-1yS" id="O2T-yG-Bqy"/>
+                        <outlet property="infoTV" destination="xAm-Lj-CPz" id="x6e-41-gsG"/>
+                        <outlet property="listPickerView" destination="sG0-Kt-cMi" id="X9F-vf-HRA"/>
+                        <outlet property="mwImage" destination="32Q-Z6-d25" id="KXz-oF-GOg"/>
+                        <outlet property="playButton" destination="8da-xp-cPh" id="dEY-5S-SB7"/>
+                        <outlet property="recordButton" destination="gef-aA-AQs" id="q4o-Kp-Rvk"/>
+                        <outlet property="wordTF" destination="lkK-ZG-y2k" id="kkY-T1-nDo"/>
+                        <segue destination="5VJ-5b-XdX" kind="presentation" identifier="mw1" modalTransitionStyle="coverVertical" id="bEA-7h-4Aj"/>
+                        <segue destination="5VJ-5b-XdX" kind="presentation" identifier="dc1" modalTransitionStyle="coverVertical" id="oMA-zp-u3U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ban-TC-AsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317.60000000000002" y="905.3973013493254"/>
+        </scene>
+        <!--Spelling Lists-->
+        <scene sceneID="r3d-Rs-lFM">
+            <objects>
+                <tableViewController title="Spelling Lists" id="DlQ-R1-gHf" customClass="ListsTableViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="xHS-P3-SLM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spelling Lists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VaS-Bt-i6k">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="19"/>
+                            <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Spell_Me_Logo_Round.png" id="F8j-PT-WLV">
+                            <rect key="frame" x="0.0" y="161.5" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listReuseIdentifier" id="ZDn-WI-zxq">
+                                <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZDn-WI-zxq" id="M76-3m-r61">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="DlQ-R1-gHf" id="jen-wD-f4B"/>
+                            <outlet property="delegate" destination="DlQ-R1-gHf" id="Rry-Dz-F5z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title=" " prompt="Spell Me!" id="Xwe-1J-jX2">
+                        <barButtonItem key="backBarButtonItem" title="Lists" id="tm9-xw-vD2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableHeaderLabel" destination="VaS-Bt-i6k" id="WZE-M1-2Kg"/>
+                        <segue destination="enR-YZ-J70" kind="show" identifier="goFromListsToReady" id="NiG-3c-sGv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c77-k9-jJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="235"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BLE-HA-l9P">
+            <objects>
+                <navigationController storyboardIdentifier="resultsNavi" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oYF-L1-eue" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Vco-G9-gPh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="36"/>
+                            <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5Tv-ww-0Em" kind="relationship" relationship="rootViewController" id="J3I-Jh-SPe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjV-2N-3Nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="-421"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="mLg-bF-KQe">
+            <objects>
+                <tableViewController id="5Tv-ww-0Em" customClass="TestResultsTableViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="99" sectionHeaderHeight="18" sectionFooterHeight="18" id="1Sq-WW-Fg8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCell" rowHeight="99" id="JNb-2R-rOl" customClass="CustomCellTableViewCell" customModule="Spell_Me_" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="99"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JNb-2R-rOl" id="iim-C9-dJu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM/DD/YY A/P - 00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIx-Nk-dQz">
+                                            <rect key="frame" x="156" y="57" width="203" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="203" id="84v-as-0JA"/>
+                                                <constraint firstAttribute="height" constant="31" id="LqN-CF-VU1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="14"/>
+                                            <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5s-sd-mZa">
+                                            <rect key="frame" x="16" y="49" width="93" height="39"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="39" id="0uV-yp-xOn"/>
+                                                <constraint firstAttribute="width" constant="93" id="Tyt-5U-lcJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="18"/>
+                                            <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOl-SP-EYp">
+                                            <rect key="frame" x="16" y="11" width="343" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="LON-r6-B0s"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="19"/>
+                                            <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hIx-Nk-dQz" secondAttribute="trailing" id="3Wt-78-341"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iOl-SP-EYp" secondAttribute="trailing" id="8s1-fJ-c4f"/>
+                                        <constraint firstAttribute="topMargin" secondItem="iOl-SP-EYp" secondAttribute="top" id="BT0-Rc-fRD"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="iOl-SP-EYp" secondAttribute="leading" id="NFN-dp-wXF"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="o5s-sd-mZa" secondAttribute="leading" id="chd-0m-9d7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hIx-Nk-dQz" secondAttribute="bottom" id="gpV-hL-wc0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="o5s-sd-mZa" secondAttribute="bottom" id="jSm-mA-8lV"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label1" destination="o5s-sd-mZa" id="DJs-Zc-vm2"/>
+                                    <outlet property="label2" destination="iOl-SP-EYp" id="gvM-hb-5yp"/>
+                                    <outlet property="label3" destination="hIx-Nk-dQz" id="7Q8-3F-TML"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Tv-ww-0Em" id="3Gl-WS-Ppn"/>
+                            <outlet property="delegate" destination="5Tv-ww-0Em" id="8hf-Xc-ckl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title=" " prompt="Spell Me!" id="Yug-6w-xiO">
+                        <barButtonItem key="backBarButtonItem" title="Results" id="3eM-FU-iak"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="5Fr-bf-b7U">
+                            <color key="tintColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="xPress:" destination="5Tv-ww-0Em" id="EvW-Af-Cgb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="TRE-fd-XK8" kind="show" identifier="segueNumeroSomething" id="dux-Rj-A3S"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQZ-nA-tyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="-421"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="eBV-HM-J6d">
+            <objects>
+                <tableViewController id="TRE-fd-XK8" customClass="WordResultsTableViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="jY0-UV-lP9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.91764705882352937" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ummmIDKReuseIdentifier" textLabel="kUb-eV-901" detailTextLabel="Jck-dY-9g7" style="IBUITableViewCellStyleValue1" id="VK9-27-9fb">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VK9-27-9fb" id="rV8-Du-1BN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kUb-eV-901">
+                                            <rect key="frame" x="16" y="11" width="38.5" height="22.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="User" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jck-dY-9g7">
+                                            <rect key="frame" x="326" y="11" width="33" height="22.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.72863033454794524" blue="0.00060614297264310554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TRE-fd-XK8" id="DKL-G4-3XO"/>
+                            <outlet property="delegate" destination="TRE-fd-XK8" id="Q5t-55-lcG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title=" " prompt="Spell Me!" id="smQ-t6-lo2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXQ-ru-hhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="-421"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="WaY-oy-2Sa">
+            <objects>
+                <viewController id="enR-YZ-J70" customClass="ListDetailViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tAS-Gi-cdI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ver-9k-MUy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jlw-nE-Mf0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0dW-1z-FRB">
+                                <rect key="frame" x="16" y="202" width="343" height="311"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="wordInListReuseIdentifier" id="mmD-cA-rBB">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mmD-cA-rBB" id="hlZ-cT-kyA">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="enR-YZ-J70" id="nt5-ET-XrX"/>
+                                    <outlet property="delegate" destination="enR-YZ-J70" id="nVN-PA-378"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words in this list:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-Zo-QdV">
+                                <rect key="frame" x="47.5" y="149" width="280" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="8xD-OJ-pWJ"/>
+                                    <constraint firstAttribute="height" constant="45" id="eCp-ww-acV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xw-fR-HNt">
+                                <rect key="frame" x="47.5" y="68" width="280" height="59"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.86274509799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="ZQ0-4w-rJF"/>
+                                    <constraint firstAttribute="width" constant="280" id="t0e-KB-qWu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="19"/>
+                                <state key="normal" title="Take a test">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="letsSpellClicked:" destination="enR-YZ-J70" eventType="touchUpInside" id="xMf-gT-JyI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAK-3l-ZUq">
+                                <rect key="frame" x="47.5" y="8" width="280" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="SZi-mB-5nF"/>
+                                    <constraint firstAttribute="width" constant="280" id="bU7-n6-5YY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tnr-I1-yuF">
+                                <rect key="frame" x="-4" y="525" width="383" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zti-1g-3qc"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem width="2" style="plain" systemItem="fixedSpace" id="ByA-P3-CEe"/>
+                                    <barButtonItem title="Add a Word" id="Xbf-7K-q8F">
+                                        <color key="tintColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="addWordClicked:" destination="enR-YZ-J70" id="JoA-VS-bCz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mNz-4j-udk"/>
+                                    <barButtonItem systemItem="action" id="bZb-zX-kMb">
+                                        <color key="tintColor" red="0.0" green="0.390691872" blue="0.65866815479999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="shareClicked:" destination="enR-YZ-J70" id="4pb-db-VZH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RM1-PF-7BC"/>
+                                    <barButtonItem title="Rename List" id="Aew-2h-1kr">
+                                        <color key="tintColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="renameClicked:" destination="enR-YZ-J70" id="vAa-og-Yeu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="2" style="plain" systemItem="fixedSpace" id="7Da-dZ-JWX"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0dW-1z-FRB" firstAttribute="leading" secondItem="Jlw-nE-Mf0" secondAttribute="leadingMargin" id="0L9-QM-AMv"/>
+                            <constraint firstItem="Tnr-I1-yuF" firstAttribute="leading" secondItem="Jlw-nE-Mf0" secondAttribute="leadingMargin" constant="-20" id="0T0-pi-Tn4"/>
+                            <constraint firstItem="0dW-1z-FRB" firstAttribute="top" secondItem="PNb-Zo-QdV" secondAttribute="bottom" constant="8" id="69n-6C-iF5"/>
+                            <constraint firstItem="0dW-1z-FRB" firstAttribute="trailing" secondItem="Jlw-nE-Mf0" secondAttribute="trailingMargin" id="MmI-vA-yu1"/>
+                            <constraint firstItem="PNb-Zo-QdV" firstAttribute="centerX" secondItem="Jlw-nE-Mf0" secondAttribute="centerX" id="OVu-mY-Fft"/>
+                            <constraint firstItem="Tnr-I1-yuF" firstAttribute="top" secondItem="0dW-1z-FRB" secondAttribute="bottom" constant="12" id="RME-M2-MIG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tnr-I1-yuF" secondAttribute="trailing" constant="-20" id="Vvg-3j-CGc"/>
+                            <constraint firstItem="XAK-3l-ZUq" firstAttribute="top" secondItem="tAS-Gi-cdI" secondAttribute="bottom" constant="8" id="ctG-Pb-hmc"/>
+                            <constraint firstItem="4xw-fR-HNt" firstAttribute="centerX" secondItem="Jlw-nE-Mf0" secondAttribute="centerX" id="f8f-jn-lZn"/>
+                            <constraint firstItem="ver-9k-MUy" firstAttribute="top" secondItem="Tnr-I1-yuF" secondAttribute="bottom" id="ibe-AC-uP8"/>
+                            <constraint firstItem="XAK-3l-ZUq" firstAttribute="centerX" secondItem="Jlw-nE-Mf0" secondAttribute="centerX" id="jah-69-ERC"/>
+                            <constraint firstItem="PNb-Zo-QdV" firstAttribute="top" secondItem="4xw-fR-HNt" secondAttribute="bottom" constant="22" id="rfW-rq-4oX"/>
+                            <constraint firstItem="4xw-fR-HNt" firstAttribute="top" secondItem="XAK-3l-ZUq" secondAttribute="bottom" constant="15" id="yNA-tm-UDL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " prompt="Spell Me!" id="LC0-Ma-f7Y">
+                        <barButtonItem key="backBarButtonItem" title="Exit Test" id="sxI-ue-GLT"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addAWordButton" destination="Xbf-7K-q8F" id="pmu-Mm-qyM"/>
+                        <outlet property="letsSpellButton" destination="4xw-fR-HNt" id="neJ-pQ-4Ke"/>
+                        <outlet property="listLabel" destination="XAK-3l-ZUq" id="YUT-hc-aL4"/>
+                        <outlet property="renameListButton" destination="Aew-2h-1kr" id="JaR-rB-elZ"/>
+                        <outlet property="wordsTableView" destination="0dW-1z-FRB" id="1nl-Ly-8e9"/>
+                        <segue destination="GfM-3D-M5I" kind="show" identifier="goToSpellSegue" id="vxh-6R-Wnr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHa-1h-jrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="234"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="BMf-G0-sen">
+            <objects>
+                <viewController id="GfM-3D-M5I" customClass="SpellingTestViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tT4-9W-bNC"/>
+                        <viewControllerLayoutGuide type="bottom" id="hSs-eP-La0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w6f-6Y-dgg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Emc-pc-tAp">
+                                <rect key="frame" x="82" y="269.5" width="211" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aTU-YN-h9I"/>
+                                    <constraint firstAttribute="width" constant="211" id="x6s-fu-qJ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUn-iV-Nwf">
+                                <rect key="frame" x="128" y="329.5" width="119" height="46"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.86274509799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="I55-S2-gV0"/>
+                                    <constraint firstAttribute="height" constant="46" id="XY9-NR-W0A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="19"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextClicked:" destination="GfM-3D-M5I" eventType="touchUpInside" id="HPg-x4-Cov"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.44" translatesAutoresizingMaskIntoConstraints="NO" id="ICZ-DP-OX1">
+                                <rect key="frame" x="82" y="547" width="211" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="CcC-Mc-Ulh"/>
+                                    <constraint firstAttribute="height" constant="2" id="bRw-P0-hkx"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.89901598800000004" green="0.89901598800000004" blue="0.89901598800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11/25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bm-AV-Ab1">
+                                <rect key="frame" x="150" y="496" width="75" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="aTN-Gp-Rye"/>
+                                    <constraint firstAttribute="width" constant="75" id="ftl-x0-EhA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY2-f3-89b">
+                                <rect key="frame" x="128" y="58.5" width="119" height="46"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.86274509799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Pec-Q4-Uec" userLabel="height = 46"/>
+                                    <constraint firstAttribute="width" constant="119" id="agM-0s-zAn" userLabel="width = 119"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="20"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSound:" destination="GfM-3D-M5I" eventType="touchUpInside" id="zZR-ZL-GKH"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="lorem ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="YeT-qx-FPV">
+                                <rect key="frame" x="22" y="119.5" width="331" height="125"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="EeG-6W-Gd9"/>
+                                    <constraint firstAttribute="height" constant="125" id="Tho-aP-162"/>
+                                    <constraint firstAttribute="width" secondItem="YeT-qx-FPV" secondAttribute="height" multiplier="80:47" id="VCg-Ux-Jvg"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VCg-Ux-Jvg"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg5-va-FFm">
+                                <rect key="frame" x="110.5" y="367.5" width="154" height="46"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.86274509799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="0d0-yq-hxI"/>
+                                    <constraint firstAttribute="width" constant="154" id="WJx-lX-Duf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
+                                <state key="normal" title="Results Page">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToResultsYo:" destination="GfM-3D-M5I" eventType="touchUpInside" id="jYH-m1-Dez"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zR6-nS-bvO">
+                                <rect key="frame" x="16" y="209.5" width="343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="77" id="8sb-qq-IF0"/>
+                                    <constraint firstAttribute="height" constant="150" id="MHT-1v-Q7Y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="tIg-Kl-6lX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.29609507680000002" blue="0.61634471319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8sb-qq-IF0"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YeT-qx-FPV" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="1b3-kn-Ayy"/>
+                            <constraint firstItem="8Bm-AV-Ab1" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="2ep-Fk-jRA"/>
+                            <constraint firstItem="Emc-pc-tAp" firstAttribute="top" secondItem="YeT-qx-FPV" secondAttribute="bottom" constant="25" id="4HZ-Kw-OkV"/>
+                            <constraint firstItem="zR6-nS-bvO" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="8TS-sg-0W3"/>
+                            <constraint firstItem="zR6-nS-bvO" firstAttribute="trailing" secondItem="w6f-6Y-dgg" secondAttribute="trailingMargin" id="97i-AN-ohU"/>
+                            <constraint firstItem="ICZ-DP-OX1" firstAttribute="top" secondItem="8Bm-AV-Ab1" secondAttribute="bottom" constant="8" id="FCe-lo-vuk"/>
+                            <constraint firstItem="PY2-f3-89b" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="G9A-f2-XZI"/>
+                            <constraint firstItem="wUn-iV-Nwf" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="GdY-Ay-zgr"/>
+                            <constraint firstItem="wUn-iV-Nwf" firstAttribute="top" secondItem="Emc-pc-tAp" secondAttribute="bottom" constant="30" id="PL5-1s-UwH"/>
+                            <constraint firstItem="Emc-pc-tAp" firstAttribute="centerY" secondItem="w6f-6Y-dgg" secondAttribute="centerY" id="azy-o2-zdt"/>
+                            <constraint firstItem="YeT-qx-FPV" firstAttribute="top" secondItem="PY2-f3-89b" secondAttribute="bottom" constant="15" id="eu1-0j-Ben"/>
+                            <constraint firstItem="Emc-pc-tAp" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="fbP-kf-A0s"/>
+                            <constraint firstItem="bg5-va-FFm" firstAttribute="top" secondItem="zR6-nS-bvO" secondAttribute="bottom" constant="8" id="hYX-Tc-S5A"/>
+                            <constraint firstItem="hSs-eP-La0" firstAttribute="top" secondItem="ICZ-DP-OX1" secondAttribute="bottom" constant="20" id="if0-0T-6ed"/>
+                            <constraint firstItem="YeT-qx-FPV" firstAttribute="leading" secondItem="w6f-6Y-dgg" secondAttribute="leadingMargin" constant="6" id="jIi-dE-tdM"/>
+                            <constraint firstItem="ICZ-DP-OX1" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="mf7-Wb-EK4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YeT-qx-FPV" secondAttribute="trailing" constant="6" id="nNk-6Z-R61"/>
+                            <constraint firstItem="zR6-nS-bvO" firstAttribute="centerY" secondItem="w6f-6Y-dgg" secondAttribute="centerY" id="v4e-pZ-70K"/>
+                            <constraint firstItem="zR6-nS-bvO" firstAttribute="leading" secondItem="w6f-6Y-dgg" secondAttribute="leadingMargin" id="yzN-dU-ySv"/>
+                            <constraint firstItem="bg5-va-FFm" firstAttribute="centerX" secondItem="w6f-6Y-dgg" secondAttribute="centerX" id="z9M-S5-y78"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " prompt="Spell Me!" id="LyJ-so-nWL"/>
+                    <connections>
+                        <outlet property="endOfTestLabel" destination="zR6-nS-bvO" id="b7o-fP-bI4"/>
+                        <outlet property="goToResultsButton" destination="bg5-va-FFm" id="jum-5q-BUu"/>
+                        <outlet property="infoTextView" destination="YeT-qx-FPV" id="Vns-FF-hSz"/>
+                        <outlet property="nextButtton" destination="wUn-iV-Nwf" id="6g5-4v-Nru"/>
+                        <outlet property="playButton" destination="PY2-f3-89b" id="SOt-Xg-cem"/>
+                        <outlet property="progressBar" destination="ICZ-DP-OX1" id="pwq-Be-IEi"/>
+                        <outlet property="progressLabel" destination="8Bm-AV-Ab1" id="2Gi-Xc-duJ"/>
+                        <outlet property="wordTextField" destination="Emc-pc-tAp" id="LFa-SK-9d7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KfB-1I-r1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="235"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wqF-Pt-w9t">
+            <objects>
+                <navigationController id="39p-A4-WXD" customClass="NavigationController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="sg2-gO-K0Q">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.96470588239999999" green="0.60784313729999995" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="36"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.60784313729999995" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nfK-0R-COw" kind="relationship" relationship="rootViewController" id="m8i-W9-zix"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhh-Iy-7Bf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-458" y="235"/>
+        </scene>
+        <!--Web Definition View Controller-->
+        <scene sceneID="d9g-D8-BYr">
+            <objects>
+                <viewController id="5VJ-5b-XdX" customClass="WebDefinitionViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SyK-ai-OcW"/>
+                        <viewControllerLayoutGuide type="bottom" id="d1u-GT-CYx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YKa-Fr-bYY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwN-Yr-uqC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="DC or MW" id="0iK-MA-3jF">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="CaV-EU-g26">
+                                            <color key="tintColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="xPressed:" destination="5VJ-5b-XdX" id="yCe-ht-sRh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-xi-wLs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90176349878311157" green="0.90142041444778442" blue="0.93448394536972046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hwN-Yr-uqC" firstAttribute="leading" secondItem="YKa-Fr-bYY" secondAttribute="leading" id="0JV-Wt-1ER"/>
+                            <constraint firstItem="oxe-xi-wLs" firstAttribute="top" secondItem="hwN-Yr-uqC" secondAttribute="bottom" id="6rM-DG-xA6"/>
+                            <constraint firstItem="hwN-Yr-uqC" firstAttribute="top" secondItem="SyK-ai-OcW" secondAttribute="bottom" id="7C7-oX-hQC"/>
+                            <constraint firstItem="d1u-GT-CYx" firstAttribute="top" secondItem="oxe-xi-wLs" secondAttribute="bottom" id="ATO-Cv-jE6"/>
+                            <constraint firstAttribute="trailing" secondItem="oxe-xi-wLs" secondAttribute="trailing" id="Jed-s8-NNK"/>
+                            <constraint firstItem="oxe-xi-wLs" firstAttribute="leading" secondItem="YKa-Fr-bYY" secondAttribute="leading" id="TL7-2d-hWT"/>
+                            <constraint firstAttribute="trailing" secondItem="hwN-Yr-uqC" secondAttribute="trailing" id="zBc-o8-duM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="oxe-xi-wLs" id="2v3-oh-jva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqO-Ii-mAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088.8" y="903.59820089955031"/>
+        </scene>
+        <!--Add Word From List View Controller-->
+        <scene sceneID="alr-Zx-fSI">
+            <objects>
+                <viewController storyboardIdentifier="addWordFromListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QDZ-D8-hpl" customClass="AddWordFromListViewController" customModule="Spell_Me_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="38P-rv-gdi"/>
+                        <viewControllerLayoutGuide type="bottom" id="kgg-y3-YvJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKT-zF-JRm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONU-4e-eDT">
+                                <rect key="frame" x="-2" y="76" width="57" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fm7-o5-j2h"/>
+                                    <constraint firstAttribute="width" constant="57" id="gjL-Sm-i8a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pronounciation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp2-kj-E7O">
+                                <rect key="frame" x="30.5" y="194" width="120" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="H0h-QP-SJS"/>
+                                    <constraint firstAttribute="height" constant="44" id="cP5-Ml-HvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition, Origin, etc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSm-7X-SbW">
+                                <rect key="frame" x="43.5" y="246" width="288" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="9ZW-BX-32P"/>
+                                    <constraint firstAttribute="width" constant="288" id="Fvg-d6-Dkh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spell_Me_Logo_Round.png" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-HY-rIR">
+                                <rect key="frame" x="162.5" y="615" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="nzu-Y9-YAT"/>
+                                    <constraint firstAttribute="height" constant="50" id="yXP-3q-lb3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRQ-nr-es6">
+                                <rect key="frame" x="43.5" y="524" width="288" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="2O6-qu-knh"/>
+                                    <constraint firstAttribute="width" constant="288" id="ceK-kX-0ow"/>
+                                    <constraint firstAttribute="height" constant="23" id="eyC-RT-hRI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="wmg-Pw-YUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBn-Rp-Mb4">
+                                <rect key="frame" x="248.5" y="191" width="85" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Q0i-kb-Rw6"/>
+                                    <constraint firstAttribute="width" constant="85" id="cn4-fA-f5Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="QDZ-D8-hpl" eventType="touchUpInside" id="Zvd-qx-0XY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYK-pd-r90">
+                                <rect key="frame" x="163.5" y="191" width="78" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="8Z9-S4-Mrj"/>
+                                    <constraint firstAttribute="height" constant="49" id="Hli-kg-ffB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="15"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="QDZ-D8-hpl" eventType="touchUpInside" id="vvQ-Oo-Dht"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex. Officinal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Gb-Yu-iDL">
+                                <rect key="frame" x="63" y="83" width="307" height="30"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP6-sL-YOr">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <color key="barTintColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="New Word" id="Ghi-NK-MHA">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="UVh-SB-t4A">
+                                            <color key="tintColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="xPressed:" destination="QDZ-D8-hpl" id="MdC-wG-wGZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Add" id="RtP-19-LHr">
+                                            <color key="tintColor" red="0.99215686270000003" green="0.5450980392" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="addWord:" destination="QDZ-D8-hpl" id="EPB-Gd-MLw"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReT-jL-snJ">
+                                <rect key="frame" x="44.5" y="555" width="286" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Iyd-mc-ngP"/>
+                                    <constraint firstAttribute="width" constant="286" id="S1X-fB-0pX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                <color key="textColor" red="0.1215686275" green="0.20392156859999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="yuG-Lb-0Un">
+                                <rect key="frame" x="45.5" y="277" width="284" height="239"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="284" id="Dd2-fk-UsN"/>
+                                    <constraint firstAttribute="width" constant="284" id="iDi-Ho-sfb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mw" translatesAutoresizingMaskIntoConstraints="NO" id="9AH-UA-qZ6">
+                                <rect key="frame" x="232" y="129" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7nO-I7-vWE"/>
+                                    <constraint firstAttribute="height" constant="50" id="eGI-x0-bYI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dictionaryCom" translatesAutoresizingMaskIntoConstraints="NO" id="ODZ-mw-7Dj">
+                                <rect key="frame" x="93" y="129" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QfS-le-6h8"/>
+                                    <constraint firstAttribute="height" constant="50" id="bOa-H1-PJP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ONU-4e-eDT" firstAttribute="centerY" secondItem="6Gb-Yu-iDL" secondAttribute="centerY" id="0Ua-Ak-3Rf"/>
+                            <constraint firstItem="xYK-pd-r90" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" constant="15" id="3t9-uj-iy4"/>
+                            <constraint firstItem="lSm-7X-SbW" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" id="4fB-zM-PmW"/>
+                            <constraint firstItem="9AH-UA-qZ6" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" constant="69.5" id="4t7-Kd-53j"/>
+                            <constraint firstItem="NRQ-nr-es6" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" id="5sk-Ra-E0b"/>
+                            <constraint firstItem="ODZ-mw-7Dj" firstAttribute="top" secondItem="6Gb-Yu-iDL" secondAttribute="bottom" constant="16" id="7am-Ev-lfa"/>
+                            <constraint firstItem="yuG-Lb-0Un" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" id="ACD-YM-s7o"/>
+                            <constraint firstItem="ReT-jL-snJ" firstAttribute="top" secondItem="NRQ-nr-es6" secondAttribute="bottom" constant="8" id="EAt-8P-e74"/>
+                            <constraint firstItem="ODZ-mw-7Dj" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" constant="-69.5" id="Ega-1O-JRT"/>
+                            <constraint firstItem="BP6-sL-YOr" firstAttribute="top" secondItem="38P-rv-gdi" secondAttribute="bottom" id="IC7-jE-e4R"/>
+                            <constraint firstItem="6Gb-Yu-iDL" firstAttribute="top" secondItem="38P-rv-gdi" secondAttribute="bottom" constant="63" id="IiA-b9-x2E"/>
+                            <constraint firstItem="NRQ-nr-es6" firstAttribute="top" secondItem="yuG-Lb-0Un" secondAttribute="bottom" constant="8" id="P5R-4E-YDa"/>
+                            <constraint firstItem="6Gb-Yu-iDL" firstAttribute="leading" secondItem="ONU-4e-eDT" secondAttribute="trailing" constant="8" id="R7r-M0-gEp"/>
+                            <constraint firstItem="aBn-Rp-Mb4" firstAttribute="leading" secondItem="xYK-pd-r90" secondAttribute="trailing" constant="7" id="XA2-IV-fQg"/>
+                            <constraint firstItem="BP6-sL-YOr" firstAttribute="leading" secondItem="gKT-zF-JRm" secondAttribute="leadingMargin" constant="-20" id="aKP-aN-JfW"/>
+                            <constraint firstItem="aBn-Rp-Mb4" firstAttribute="top" secondItem="9AH-UA-qZ6" secondAttribute="bottom" constant="12" id="acK-4b-1ee"/>
+                            <constraint firstItem="lSm-7X-SbW" firstAttribute="top" secondItem="xYK-pd-r90" secondAttribute="bottom" constant="6" id="bcb-5y-DKJ"/>
+                            <constraint firstItem="aBn-Rp-Mb4" firstAttribute="centerY" secondItem="xYK-pd-r90" secondAttribute="centerY" id="cJ2-bH-Owi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BP6-sL-YOr" secondAttribute="trailing" constant="-20" id="eBa-2Y-brf"/>
+                            <constraint firstItem="xYK-pd-r90" firstAttribute="top" secondItem="ODZ-mw-7Dj" secondAttribute="bottom" constant="12" id="f9L-X2-kqA"/>
+                            <constraint firstItem="bvT-HY-rIR" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" id="gBy-Wg-pBa"/>
+                            <constraint firstItem="ReT-jL-snJ" firstAttribute="centerX" secondItem="gKT-zF-JRm" secondAttribute="centerX" id="mYB-ni-hhd"/>
+                            <constraint firstItem="ONU-4e-eDT" firstAttribute="leading" secondItem="gKT-zF-JRm" secondAttribute="leadingMargin" constant="-18" id="mwt-rK-Kyu"/>
+                            <constraint firstItem="bvT-HY-rIR" firstAttribute="top" secondItem="ReT-jL-snJ" secondAttribute="bottom" constant="34" id="nPF-1b-fuN"/>
+                            <constraint firstItem="kgg-y3-YvJ" firstAttribute="top" secondItem="bvT-HY-rIR" secondAttribute="bottom" constant="2" id="naM-nB-YlL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Gb-Yu-iDL" secondAttribute="trailing" constant="-11" id="rLV-kP-GYI"/>
+                            <constraint firstItem="gp2-kj-E7O" firstAttribute="top" secondItem="ODZ-mw-7Dj" secondAttribute="bottom" constant="15" id="rdd-2X-Qpp"/>
+                            <constraint firstItem="xYK-pd-r90" firstAttribute="leading" secondItem="gp2-kj-E7O" secondAttribute="trailing" constant="13" id="rog-wX-8sc"/>
+                            <constraint firstItem="9AH-UA-qZ6" firstAttribute="top" secondItem="6Gb-Yu-iDL" secondAttribute="bottom" constant="16" id="vLB-x0-xzT"/>
+                            <constraint firstItem="yuG-Lb-0Un" firstAttribute="top" secondItem="lSm-7X-SbW" secondAttribute="bottom" constant="8" id="vyC-In-YTK"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="dcImage" destination="ODZ-mw-7Dj" id="QtB-cZ-3KE"/>
+                        <outlet property="infoTV" destination="yuG-Lb-0Un" id="2HP-1F-5i6"/>
+                        <outlet property="listLabel" destination="ReT-jL-snJ" id="Fzq-sU-2yh"/>
+                        <outlet property="mwImage" destination="9AH-UA-qZ6" id="lh5-2p-G4a"/>
+                        <outlet property="playButton" destination="aBn-Rp-Mb4" id="Euq-cM-dbH"/>
+                        <outlet property="recordButton" destination="xYK-pd-r90" id="s4G-cR-Kf8"/>
+                        <outlet property="wordTF" destination="6Gb-Yu-iDL" id="DN3-IF-hHR"/>
+                        <segue destination="5VJ-5b-XdX" kind="presentation" identifier="mw2" modalTransitionStyle="coverVertical" id="Vhf-9A-wjo"/>
+                        <segue destination="5VJ-5b-XdX" kind="presentation" identifier="dc2" modalTransitionStyle="coverVertical" id="8Wb-TB-CVv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7b7-gt-mqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="904"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Spell_Me_Logo_Round.png" width="700" height="700"/>
+        <image name="dictionaryCom" width="280" height="280"/>
+        <image name="mw" width="1024" height="1024"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Wb-TB-CVv"/>
+    </inferredMetricsTieBreakers>
+</document>

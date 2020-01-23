@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2351E57006B9481383B258D8 /* Pods_Spell_Me_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F975A8E61B8372777365589 /* Pods_Spell_Me_.framework */; };
+		8A0B25671D11CDDA008220C8 /* Spell_Me_Logo_Round.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B25651D11CDDA008220C8 /* Spell_Me_Logo_Round.png */; };
+		8A350D1B1DAFED1F0024AE45 /* WebDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A350D1A1DAFED1F0024AE45 /* WebDefinitionViewController.swift */; };
+		8A413C5D1D11CADA00935240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A413C5C1D11CADA00935240 /* AppDelegate.swift */; };
+		8A413C5F1D11CADA00935240 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A413C5E1D11CADA00935240 /* StartViewController.swift */; };
+		8A413C651D11CADA00935240 /* Spell_Me_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A413C631D11CADA00935240 /* Spell_Me_.xcdatamodeld */; };
+		8A413C6A1D11CADA00935240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A413C681D11CADA00935240 /* LaunchScreen.storyboard */; };
+		8A50578A1D18AE4C00A29AF1 /* SpellingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5057891D18AE4C00A29AF1 /* SpellingTestViewController.swift */; };
+		8A6214FA1D15F27D00E8A6A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6214F91D15F27D00E8A6A7 /* ViewController.swift */; };
+		8A6214FC1D160A8400E8A6A7 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6214FB1D160A8300E8A6A7 /* ListDetailViewController.swift */; };
+		8A70BB5C1D13841C001E4E8E /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70BB5B1D13841C001E4E8E /* AddWordViewController.swift */; };
+		8A70BB5E1D139375001E4E8E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70BB5D1D139375001E4E8E /* NavigationController.swift */; };
+		8A7A6A691D11EE2900DBB522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7A6A681D11EE2900DBB522 /* Assets.xcassets */; };
+		8A7A6A6B1D11F33E00DBB522 /* ListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A6A6A1D11F33E00DBB522 /* ListsTableViewController.swift */; };
+		8A7F3E051EE72B4400064FF8 /* Spell_Me_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F3E041EE72B4400064FF8 /* Spell_Me_Tests.swift */; };
+		8A7F9D5B1D1B146200A36237 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F9D5A1D1B146200A36237 /* CustomCellTableViewCell.swift */; };
+		8A7F9D5D1D1B172E00A36237 /* TestResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F9D5C1D1B172E00A36237 /* TestResultsTableViewController.swift */; };
+		8A9972171D3C83000096B257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9972161D3C83000096B257 /* Main.storyboard */; };
+		8ACC3D611DB2A8A90031FF75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ACC3D601DB2A8A90031FF75 /* GoogleService-Info.plist */; };
+		8AE019B11D1AEEE1007ECBF5 /* WordResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE019B01D1AEEE1007ECBF5 /* WordResultsTableViewController.swift */; };
+		8AE33D3F1D3EA21200EB2419 /* AddWordFromListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE33D3E1D3EA21200EB2419 /* AddWordFromListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A7F3E071EE72B4400064FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A413C511D11CADA00935240 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A413C581D11CADA00935240;
+			remoteInfo = "Spell Me!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F975A8E61B8372777365589 /* Pods_Spell_Me_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spell_Me_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A00ED911DBBFC4700A6ADD8 /* Spell Me!.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Spell Me!.entitlements"; sourceTree = "<group>"; };
+		8A0B25651D11CDDA008220C8 /* Spell_Me_Logo_Round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spell_Me_Logo_Round.png; sourceTree = "<group>"; };
+		8A350D1A1DAFED1F0024AE45 /* WebDefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDefinitionViewController.swift; sourceTree = "<group>"; };
+		8A413C591D11CADA00935240 /* Spell Me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spell Me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A413C5C1D11CADA00935240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A413C5E1D11CADA00935240 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		8A413C641D11CADA00935240 /* Spell_Me_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spell_Me_.xcdatamodel; sourceTree = "<group>"; };
+		8A413C691D11CADA00935240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A413C6B1D11CADA00935240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5057891D18AE4C00A29AF1 /* SpellingTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingTestViewController.swift; sourceTree = "<group>"; };
+		8A6214F91D15F27D00E8A6A7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A6214FB1D160A8300E8A6A7 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		8A70BB5B1D13841C001E4E8E /* AddWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
+		8A70BB5D1D139375001E4E8E /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		8A7A6A681D11EE2900DBB522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A7A6A6A1D11F33E00DBB522 /* ListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewController.swift; sourceTree = "<group>"; };
+		8A7F3E021EE72B4400064FF8 /* Spell Me!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spell Me!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7F3E041EE72B4400064FF8 /* Spell_Me_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell_Me_Tests.swift; sourceTree = "<group>"; };
+		8A7F3E061EE72B4400064FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7F9D5A1D1B146200A36237 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		8A7F9D5C1D1B172E00A36237 /* TestResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultsTableViewController.swift; sourceTree = "<group>"; };
+		8A9972161D3C83000096B257 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8ACC3D601DB2A8A90031FF75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AE019B01D1AEEE1007ECBF5 /* WordResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordResultsTableViewController.swift; sourceTree = "<group>"; };
+		8AE33D3E1D3EA21200EB2419 /* AddWordFromListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWordFromListViewController.swift; sourceTree = "<group>"; };
+		C2A9A61C0672E274F2F3FD59 /* Pods-Spell Me!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spell Me!.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spell Me!/Pods-Spell Me!.release.xcconfig"; sourceTree = "<group>"; };
+		F28D0A68C1CDD5B0952A6C9D /* Pods-Spell Me!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spell Me!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spell Me!/Pods-Spell Me!.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A413C561D11CADA00935240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2351E57006B9481383B258D8 /* Pods_Spell_Me_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A7F3DFF1EE72B4400064FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A413C501D11CADA00935240 = {
+			isa = PBXGroup;
+			children = (
+				8A413C5B1D11CADA00935240 /* Spell Me! */,
+				8A7F3E031EE72B4400064FF8 /* Spell Me!Tests */,
+				8A413C5A1D11CADA00935240 /* Products */,
+				A1D72F6165AFDBC671F2D4E8 /* Pods */,
+				CA28F585D8F15D0D43EE1DC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A413C5A1D11CADA00935240 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A413C591D11CADA00935240 /* Spell Me!.app */,
+				8A7F3E021EE72B4400064FF8 /* Spell Me!Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A413C5B1D11CADA00935240 /* Spell Me! */ = {
+			isa = PBXGroup;
+			children = (
+				8A00ED911DBBFC4700A6ADD8 /* Spell Me!.entitlements */,
+				8A0B25651D11CDDA008220C8 /* Spell_Me_Logo_Round.png */,
+				8A413C5C1D11CADA00935240 /* AppDelegate.swift */,
+				8A6214F91D15F27D00E8A6A7 /* ViewController.swift */,
+				8A413C681D11CADA00935240 /* LaunchScreen.storyboard */,
+				8A70BB5D1D139375001E4E8E /* NavigationController.swift */,
+				8A9972161D3C83000096B257 /* Main.storyboard */,
+				8A350D1A1DAFED1F0024AE45 /* WebDefinitionViewController.swift */,
+				8A413C5E1D11CADA00935240 /* StartViewController.swift */,
+				8A70BB5B1D13841C001E4E8E /* AddWordViewController.swift */,
+				8A7A6A6A1D11F33E00DBB522 /* ListsTableViewController.swift */,
+				8A6214FB1D160A8300E8A6A7 /* ListDetailViewController.swift */,
+				8AE33D3E1D3EA21200EB2419 /* AddWordFromListViewController.swift */,
+				8A5057891D18AE4C00A29AF1 /* SpellingTestViewController.swift */,
+				8A7F9D5A1D1B146200A36237 /* CustomCellTableViewCell.swift */,
+				8A7F9D5C1D1B172E00A36237 /* TestResultsTableViewController.swift */,
+				8AE019B01D1AEEE1007ECBF5 /* WordResultsTableViewController.swift */,
+				8A7A6A681D11EE2900DBB522 /* Assets.xcassets */,
+				8A413C6B1D11CADA00935240 /* Info.plist */,
+				8ACC3D601DB2A8A90031FF75 /* GoogleService-Info.plist */,
+				8A413C631D11CADA00935240 /* Spell_Me_.xcdatamodeld */,
+			);
+			path = "Spell Me!";
+			sourceTree = "<group>";
+		};
+		8A7F3E031EE72B4400064FF8 /* Spell Me!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8A7F3E041EE72B4400064FF8 /* Spell_Me_Tests.swift */,
+				8A7F3E061EE72B4400064FF8 /* Info.plist */,
+			);
+			path = "Spell Me!Tests";
+			sourceTree = "<group>";
+		};
+		A1D72F6165AFDBC671F2D4E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F28D0A68C1CDD5B0952A6C9D /* Pods-Spell Me!.debug.xcconfig */,
+				C2A9A61C0672E274F2F3FD59 /* Pods-Spell Me!.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA28F585D8F15D0D43EE1DC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F975A8E61B8372777365589 /* Pods_Spell_Me_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A413C581D11CADA00935240 /* Spell Me! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A413C6E1D11CADA00935240 /* Build configuration list for PBXNativeTarget "Spell Me!" */;
+			buildPhases = (
+				ABB2CA75FE4BD02781444B9D /* [CP] Check Pods Manifest.lock */,
+				8A413C551D11CADA00935240 /* Sources */,
+				8A413C561D11CADA00935240 /* Frameworks */,
+				8A413C571D11CADA00935240 /* Resources */,
+				B5C962689520B358F39AE8B2 /* [CP] Embed Pods Frameworks */,
+				2B743DCA6DD91E8385D2E3D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spell Me!";
+			productName = "Spell Me!";
+			productReference = 8A413C591D11CADA00935240 /* Spell Me!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A7F3E011EE72B4400064FF8 /* Spell Me!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7F3E0B1EE72B4400064FF8 /* Build configuration list for PBXNativeTarget "Spell Me!Tests" */;
+			buildPhases = (
+				8A7F3DFE1EE72B4400064FF8 /* Sources */,
+				8A7F3DFF1EE72B4400064FF8 /* Frameworks */,
+				8A7F3E001EE72B4400064FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A7F3E081EE72B4400064FF8 /* PBXTargetDependency */,
+			);
+			name = "Spell Me!Tests";
+			productName = "Spell Me!Tests";
+			productReference = 8A7F3E021EE72B4400064FF8 /* Spell Me!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A413C511D11CADA00935240 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Etash Kalra";
+				TargetAttributes = {
+					8A413C581D11CADA00935240 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UE56UYR8N4;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+					8A7F3E011EE72B4400064FF8 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = Y7E4F5N3B7;
+						TestTargetID = 8A413C581D11CADA00935240;
+					};
+				};
+			};
+			buildConfigurationList = 8A413C541D11CADA00935240 /* Build configuration list for PBXProject "Spell Me!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A413C501D11CADA00935240;
+			productRefGroup = 8A413C5A1D11CADA00935240 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A413C581D11CADA00935240 /* Spell Me! */,
+				8A7F3E011EE72B4400064FF8 /* Spell Me!Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A413C571D11CADA00935240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A413C6A1D11CADA00935240 /* LaunchScreen.storyboard in Resources */,
+				8A0B25671D11CDDA008220C8 /* Spell_Me_Logo_Round.png in Resources */,
+				8ACC3D611DB2A8A90031FF75 /* GoogleService-Info.plist in Resources */,
+				8A7A6A691D11EE2900DBB522 /* Assets.xcassets in Resources */,
+				8A9972171D3C83000096B257 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A7F3E001EE72B4400064FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B743DCA6DD91E8385D2E3D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spell Me!/Pods-Spell Me!-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB2CA75FE4BD02781444B9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C962689520B358F39AE8B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spell Me!/Pods-Spell Me!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A413C551D11CADA00935240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7F9D5D1D1B172E00A36237 /* TestResultsTableViewController.swift in Sources */,
+				8A70BB5C1D13841C001E4E8E /* AddWordViewController.swift in Sources */,
+				8A70BB5E1D139375001E4E8E /* NavigationController.swift in Sources */,
+				8A7F9D5B1D1B146200A36237 /* CustomCellTableViewCell.swift in Sources */,
+				8A413C5F1D11CADA00935240 /* StartViewController.swift in Sources */,
+				8AE33D3F1D3EA21200EB2419 /* AddWordFromListViewController.swift in Sources */,
+				8A413C5D1D11CADA00935240 /* AppDelegate.swift in Sources */,
+				8A6214FA1D15F27D00E8A6A7 /* ViewController.swift in Sources */,
+				8A350D1B1DAFED1F0024AE45 /* WebDefinitionViewController.swift in Sources */,
+				8A6214FC1D160A8400E8A6A7 /* ListDetailViewController.swift in Sources */,
+				8A413C651D11CADA00935240 /* Spell_Me_.xcdatamodeld in Sources */,
+				8AE019B11D1AEEE1007ECBF5 /* WordResultsTableViewController.swift in Sources */,
+				8A50578A1D18AE4C00A29AF1 /* SpellingTestViewController.swift in Sources */,
+				8A7A6A6B1D11F33E00DBB522 /* ListsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A7F3DFE1EE72B4400064FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7F3E051EE72B4400064FF8 /* Spell_Me_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A7F3E081EE72B4400064FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A413C581D11CADA00935240 /* Spell Me! */;
+			targetProxy = 8A7F3E071EE72B4400064FF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A413C681D11CADA00935240 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A413C691D11CADA00935240 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A413C6C1D11CADA00935240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A413C6D1D11CADA00935240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A413C6F1D11CADA00935240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28D0A68C1CDD5B0952A6C9D /* Pods-Spell Me!.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Spell Me!/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EtashKalra.Spell-Me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A413C701D11CADA00935240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A9A61C0672E274F2F3FD59 /* Pods-Spell Me!.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Spell Me!/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EtashKalra.Spell-Me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A7F3E091EE72B4400064FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y7E4F5N3B7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Spell Me!Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Etash-Kalra.Spell-Me-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spell Me!.app/Spell Me!";
+			};
+			name = Debug;
+		};
+		8A7F3E0A1EE72B4400064FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y7E4F5N3B7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Spell Me!Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Etash-Kalra.Spell-Me-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spell Me!.app/Spell Me!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A413C541D11CADA00935240 /* Build configuration list for PBXProject "Spell Me!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A413C6C1D11CADA00935240 /* Debug */,
+				8A413C6D1D11CADA00935240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A413C6E1D11CADA00935240 /* Build configuration list for PBXNativeTarget "Spell Me!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A413C6F1D11CADA00935240 /* Debug */,
+				8A413C701D11CADA00935240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A7F3E0B1EE72B4400064FF8 /* Build configuration list for PBXNativeTarget "Spell Me!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F3E091EE72B4400064FF8 /* Debug */,
+				8A7F3E0A1EE72B4400064FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8A413C631D11CADA00935240 /* Spell_Me_.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8A413C641D11CADA00935240 /* Spell_Me_.xcdatamodel */,
+			);
+			currentVersion = 8A413C641D11CADA00935240 /* Spell_Me_.xcdatamodel */;
+			path = Spell_Me_.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8A413C511D11CADA00935240 /* Project object */;
+}

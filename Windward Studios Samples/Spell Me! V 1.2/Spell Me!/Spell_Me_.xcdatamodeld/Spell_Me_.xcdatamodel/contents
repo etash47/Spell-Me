@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Test_Session" syncable="YES">
+        <attribute name="correctOrNot" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="list" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userType" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="words" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Word" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="list" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spelling" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Test_Session" positionX="-54" positionY="18" width="128" height="135"/>
+        <element name="Word" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>
